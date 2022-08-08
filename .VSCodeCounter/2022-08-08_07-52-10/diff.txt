@@ -1,0 +1,38 @@
+Date : 2022-08-08 07:52:10
+Directory : c:\Users\ramzy\projects\personal projects\marvomics\pages
+Total : 9 files,  64 codes, 0 comments, 19 blanks, all 83 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          9 |         64 |          0 |         19 |         83 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |          9 |         64 |          0 |         19 |         83 |
+| ..                                                                                    |          1 |        -38 |          0 |         -1 |        -39 |
+| ..\Data                                                                               |          1 |        -38 |          0 |         -1 |        -39 |
+| ..\Data\Homepage                                                                      |          1 |        -38 |          0 |         -1 |        -39 |
+| characters                                                                            |          2 |         22 |          0 |          5 |         27 |
+| comics                                                                                |          2 |         22 |          0 |          5 |         27 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                              | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\ramzy\projects\personal projects\marvomics\Data\Homepage\Packs.js            | JavaScript |        -38 |          0 |         -1 |        -39 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\404.js                      | JavaScript |         10 |          0 |          2 |         12 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\_app.js                     | JavaScript |          8 |          0 |          3 |         11 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\_document.js                | JavaScript |         17 |          0 |          2 |         19 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\characters\[characterId].js | JavaScript |          7 |          0 |          2 |          9 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\characters\index.js         | JavaScript |         15 |          0 |          3 |         18 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\comics\[comicId].js         | JavaScript |          7 |          0 |          2 |          9 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\comics\index.js             | JavaScript |         15 |          0 |          3 |         18 |
+| c:\Users\ramzy\projects\personal projects\marvomics\pages\index.js                    | JavaScript |         23 |          0 |          3 |         26 |
+| Total                                                                                 |            |         64 |          0 |         19 |         83 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

@@ -1,0 +1,36 @@
+Date : 2022-08-08 07:52:19
+Directory : c:\Users\ramzy\projects\personal projects\marvomics\styles
+Total : 7 files,  -60 codes, 0 comments, -2 blanks, all -62 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| CSS      |          1 |         12 |          0 |          3 |         15 |
+| XML      |          6 |        -72 |          0 |         -5 |        -77 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                      | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                         |          7 |        -60 |          0 |         -2 |        -62 |
+| ..                                                                                        |          6 |        -72 |          0 |         -5 |        -77 |
+| ..\public                                                                                 |          6 |        -72 |          0 |         -5 |        -77 |
+| ..\public\assets                                                                          |          5 |        -68 |          0 |         -5 |        -73 |
+| ..\public\assets\icons                                                                    |          4 |        -22 |          0 |         -4 |        -26 |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                  | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\Users\ramzy\projects\personal projects\marvomics\public\assets\404.svg                 | XML      |        -46 |          0 |         -1 |        -47 |
+| c:\Users\ramzy\projects\personal projects\marvomics\public\assets\icons\chevron-right.svg | XML      |         -3 |          0 |         -1 |         -4 |
+| c:\Users\ramzy\projects\personal projects\marvomics\public\assets\icons\github.svg        | XML      |        -10 |          0 |         -1 |        -11 |
+| c:\Users\ramzy\projects\personal projects\marvomics\public\assets\icons\menu.svg          | XML      |         -3 |          0 |         -1 |         -4 |
+| c:\Users\ramzy\projects\personal projects\marvomics\public\assets\icons\packs.svg         | XML      |         -6 |          0 |         -1 |         -7 |
+| c:\Users\ramzy\projects\personal projects\marvomics\public\vercel.svg                     | XML      |         -4 |          0 |          0 |         -4 |
+| c:\Users\ramzy\projects\personal projects\marvomics\styles\globals.css                    | CSS      |         12 |          0 |          3 |         15 |
+| Total                                                                                     |          |        -60 |          0 |         -2 |        -62 |
++-------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

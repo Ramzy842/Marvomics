@@ -1,26 +1,54 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+.mobile-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* width */
+html::-webkit-scrollbar,
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 50px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(63.18deg, #931d1d 0%, #df2144 100%);
+  border-radius: 50px;
+  width: 5px;
+  border: 2px solid #000000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(63.18deg, #931d1d 0%, #df2144 100%);
+
+  width: 5px;
+  border: 2px solid #000000;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(63.18deg, #109fcf 0%, #0421ff 100%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
   html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+    font-family: "Poppins", sans-serif;
   }
 }
