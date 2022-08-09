@@ -5,23 +5,22 @@ import Footer from "../footer/Footer";
 import Link from "next/link";
 import axios from "axios";
 
-const CharactersAndComicsLayout = ({ data, page, type, found, displayed }) => {
+const CharactersAndComicsLayout = ({ data, page, type }) => {
   const [list, setList] = useState(data);
-  // const slider = window.document.getElementById("slider")
-  // useEffect(() => {
-  //   console.log(slider.getBoundingClientRect());
-  // }, [])
+  
   const [searchTerm, setSearchTerm] = useState("");
   const characterSearchByTerm = `https://gateway.marvel.com/v1/public/characters?ts=1&nameStartsWith=${searchTerm}&apikey=d8f2d3193110c1144ecce70a33f3acda&hash=1e30cc74fe508db2f099dff643d5489d`;
   const comicsSearchByTerm = `https://gateway.marvel.com/v1/public/comics?ts=1&titleStartsWith=${searchTerm}&apikey=d8f2d3193110c1144ecce70a33f3acda&hash=1e30cc74fe508db2f099dff643d5489d`;
 
   useEffect(() => {
     const fetchNew = async () => {
-      const req = await axios.get(
-        page === "comics" ? comicsSearchByTerm : characterSearchByTerm
-      );
-      const result = req.data.data;
-      setList(result);
+      if (searchTerm.length > 0) {
+        const req = await axios.get(
+          page === "comics" ? comicsSearchByTerm : characterSearchByTerm
+        );
+        const result = req.data.data;
+        setList(result);
+      }
     };
     fetchNew();
   }, [characterSearchByTerm, comicsSearchByTerm, page, searchTerm]);
@@ -89,15 +88,13 @@ const CharactersAndComicsLayout = ({ data, page, type, found, displayed }) => {
 
       <div className="flex pb-4 ">
         <div className="mx-auto container">
-          <div className="overflow-y-scroll scrollbar h-[490px] hidden sm:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mx-8 mt-4 gap-y-8 justify-between  ">
+          <div className="overflow-y-scroll scrollbar  h-[490px] hidden sm:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mx-8 mt-4 gap-y-8 justify-between  ">
             {list.results?.map((element) => {
               const { id, name, title, thumbnail } = element;
               return (
                 <div
                   key={id}
-                  className={`${
-                    list.count <= 6 ? "justify-center" : "justify-between"
-                  } flex flex-col  items-center`}
+                  className={`flex flex-col justify-between items-center`}
                 >
                   <div className="flex flex-col items-center ">
                     <div className="rounded-md shadow-poster-mobile flex">

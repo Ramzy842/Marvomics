@@ -18,12 +18,14 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden justify-between max-w-xl mr-8 md:flex items-center">
-        <li
-          className={`transition ${
-            currentRoute === "/" ? "bg-white " : "hover:bg-gradient-to-r from-pink-500 to-red-500  "
-          } text-white ml-4 px-4 py-1 rounded   `}
-        >
-          <Link href="/">
+        <Link href="/">
+          <li
+            className={`transition ${
+              currentRoute === "/"
+                ? "bg-white "
+                : "hover:bg-gradient-to-r from-violet-500 to-fuchsia-500  "
+            } text-white ml-4 px-4 py-1 rounded  cursor-pointer `}
+          >
             <a
               className={`${
                 currentRoute === "/"
@@ -33,14 +35,17 @@ const Navbar = () => {
             >
               Home
             </a>
-          </Link>
-        </li>
-        <li
-          className={`transition ${
-            currentRoute === "/characters" ? "bg-white" : "hover:bg-gradient-to-r from-pink-500 to-red-500"
-          } text-white ml-4 px-4 py-1 rounded  `}
-        >
-          <Link href="/characters">
+          </li>
+        </Link>
+
+        <Link href="/characters">
+          <li
+            className={`transition ${
+              currentRoute === "/characters"
+                ? "bg-white"
+                : "hover:bg-gradient-to-r from-violet-500 to-fuchsia-500"
+            } text-white ml-4 px-4 py-1 rounded cursor-pointer `}
+          >
             <a
               className={`${
                 currentRoute === "/characters"
@@ -50,14 +55,17 @@ const Navbar = () => {
             >
               Characters
             </a>
-          </Link>
-        </li>
-        <li
-          className={`${
-            currentRoute === "/comics" ? "bg-white" : "hover:bg-gradient-to-r from-pink-500 to-red-500"
-          } text-white ml-4 px-4 py-1 rounded  `}
-        >
-          <Link href="/comics">
+          </li>
+        </Link>
+
+        <Link href="/comics">
+          <li
+            className={`${
+              currentRoute === "/comics"
+                ? "bg-white"
+                : "hover:bg-gradient-to-r from-violet-500 to-fuchsia-500"
+            } text-white ml-4 px-4 py-1 rounded cursor-pointer `}
+          >
             <a
               className={`${
                 currentRoute === "/comics"
@@ -67,11 +75,20 @@ const Navbar = () => {
             >
               Comics
             </a>
-          </Link>
-        </li>
+          </li>
+        </Link>
+
         <li className="text-white ml-4 px-3 ">
-          <a href="https://github.com/ramzy842" className=" rounded-full border-2 border-white flex p-2 items-center justify-center">
-            <Image alt="github" src="/assets/icons/github.svg" height={20} width={20} />
+          <a
+            href="https://github.com/ramzy842"
+            className=" rounded-full border-2 border-white flex p-2 items-center justify-center"
+          >
+            <Image
+              alt="github"
+              src="/assets/icons/github.svg"
+              height={20}
+              width={20}
+            />
           </a>
         </li>
       </ul>

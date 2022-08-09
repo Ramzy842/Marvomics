@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Packs />
+      {/* <Packs /> */}
     </div>
   );
 }
