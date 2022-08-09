@@ -29,13 +29,18 @@ const SingleCharacterAndComicLayout = ({
             <div className="shadow-thumbnail-large flex   md:hidden">
               {page === "comic" ? (
                 <Image
-                  src={`${
-                    images[0]
-                      ? images[0].path +
-                        "/portrait_incredible." +
-                        images[0].extension
-                      : "/assets/not_found.webp"
-                  } `}
+                  // src={`${
+                  //   images[0]
+                  //     ? images[0].path +
+                  //       "/portrait_incredible." +
+                  //       images[0].extension
+                  //     : "/assets/not_found.webp"
+                  // } `}
+                  src={
+                    images[0].path +
+                    "/portrait_incredible." +
+                    images[0].extension
+                  }
                   height={206}
                   width={138}
                   alt={page}
@@ -55,13 +60,18 @@ const SingleCharacterAndComicLayout = ({
             <div className="shadow-thumbnail-large md:flex hidden">
               {page === "comic" ? (
                 <Image
-                  src={`${
-                    images[0]
-                      ? images[0].path +
-                        "/portrait_incredible." +
-                        images[0].extension
-                      : "/assets/not_found.webp"
-                  } `}
+                  // src={`${
+                  //   images[0]
+                  //     ? images[0].path +
+                  //       "/portrait_incredible." +
+                  //       images[0].extension
+                  //     : "/assets/not_found.webp"
+                  // } `}
+                  src={
+                    images[0].path +
+                    "/portrait_incredible." +
+                    images[0].extension
+                  }
                   height={324}
                   width={216}
                   alt={page}
