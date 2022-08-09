@@ -1,10 +1,14 @@
 import React from 'react'
 import axios from "axios";
 import SingleCharacterAndComicLayout from '../../components/layouts/SingleCharacterAndComicLayout'
+import NotFound from '../../components/layouts/404';
 
 const Comic = ({comic}) => {
   console.log(comic.results[0]);
   const {id, title, characters, images, series} = comic.results[0];
+  if (!comic.results[0]) {
+    return <div>No comic</div>
+  }
   return (
     <SingleCharacterAndComicLayout id={id} title={title} characters={characters} images={images} page="comic" series={series} />
   )

@@ -30,9 +30,11 @@ const SingleCharacterAndComicLayout = ({
               {page === "comic" ? (
                 <Image
                   src={`${
-                    images[0].path +
-                    "/portrait_incredible." +
-                    images[0].extension
+                    images[0]
+                      ? images[0].path +
+                        "/portrait_incredible." +
+                        images[0].extension
+                      : "/assets/not_found.webp"
                   } `}
                   height={206}
                   width={138}
@@ -54,9 +56,11 @@ const SingleCharacterAndComicLayout = ({
               {page === "comic" ? (
                 <Image
                   src={`${
-                    images[0].path +
-                    "/portrait_incredible." +
-                    images[0].extension
+                    images[0]
+                      ? images[0].path +
+                        "/portrait_incredible." +
+                        images[0].extension
+                      : "/assets/not_found.webp"
                   } `}
                   height={324}
                   width={216}
@@ -221,10 +225,11 @@ const SingleCharacterAndComicLayout = ({
                 {name} appeared in the following comics:
               </h1>
             )}
-            {comics.items.length === 0 && <h1 className="text-white font-medium text-sm w-4/5 max-w-xl">
+            {comics.items.length === 0 && (
+              <h1 className="text-white font-medium text-sm w-4/5 max-w-xl">
                 {name} did not appeare in any comics
               </h1>
-            }
+            )}
             {page === "character" && (
               <div className="pb-4 mt-4 flex flex-wrap  max-w-5xl">
                 {comics.items.map((item, index) => {
