@@ -3,7 +3,7 @@ import axios from "axios";
 import CharactersAndComicsLayout from "../../components/layouts/CharactersAndComicsLayout";
 import Head from "next/head";
 
-const ComicsPage = ({ comics, setMenuOpen }) => {
+const ComicsPage = ({ comics, setMenuOpen, API_KEY, Hash }) => {
   
   useEffect(() => {
     setMenuOpen(false)
@@ -18,6 +18,8 @@ const ComicsPage = ({ comics, setMenuOpen }) => {
         data={comics.data}
         comics
         type="comics"
+        API_KEY={API_KEY}
+        Hash={Hash}
       />
     </>
   );
@@ -30,6 +32,8 @@ export const getStaticProps = async () => {
   return {
     props: {
       comics,
+      API_KEY: process.env.API_KEY,
+      Hash: process.env.Hash
     },
   };
 };

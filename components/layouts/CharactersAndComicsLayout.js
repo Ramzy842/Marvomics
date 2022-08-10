@@ -5,12 +5,12 @@ import Footer from "../footer/Footer";
 import Link from "next/link";
 import axios from "axios";
 
-const CharactersAndComicsLayout = ({ data, page, type }) => {
+const CharactersAndComicsLayout = ({ data, page, type, API_KEY, Hash }) => {
   const [list, setList] = useState(data);
   
   const [searchTerm, setSearchTerm] = useState("");
-  const characterSearchByTerm = `https://gateway.marvel.com/v1/public/characters?ts=1&nameStartsWith=${searchTerm}&apikey=d8f2d3193110c1144ecce70a33f3acda&hash=1e30cc74fe508db2f099dff643d5489d`;
-  const comicsSearchByTerm = `https://gateway.marvel.com/v1/public/comics?ts=1&titleStartsWith=${searchTerm}&apikey=d8f2d3193110c1144ecce70a33f3acda&hash=1e30cc74fe508db2f099dff643d5489d`;
+  const characterSearchByTerm = `https://gateway.marvel.com/v1/public/characters?ts=1&nameStartsWith=${searchTerm}&apikey=${API_KEY}&hash=${Hash}`;
+  const comicsSearchByTerm = `https://gateway.marvel.com/v1/public/comics?ts=1&titleStartsWith=${searchTerm}&apikey=${API_KEY}&hash=${Hash}`;
 
   useEffect(() => {
     const fetchNew = async () => {

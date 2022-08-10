@@ -3,7 +3,7 @@ import Head from "next/head";
 import React, { useEffect } from "react";
 import CharactersAndComicsLayout from "../../components/layouts/CharactersAndComicsLayout";
 
-const CharactersPage = ({ characters, setMenuOpen }) => {
+const CharactersPage = ({ characters, setMenuOpen, API_KEY, Hash }) => {
   useEffect(() => {
     setMenuOpen(false)
   }, [setMenuOpen])
@@ -16,6 +16,8 @@ const CharactersPage = ({ characters, setMenuOpen }) => {
         characters
         data={characters.data}
         type="characters"
+        API_KEY={API_KEY}
+        Hash={Hash}
       />
     </>
   );
@@ -29,6 +31,8 @@ export const getStaticProps = async () => {
   return {
     props: {
       characters,
+      API_KEY: process.env.API_KEY,
+      Hash: process.env.Hash
     },
   };
 };
