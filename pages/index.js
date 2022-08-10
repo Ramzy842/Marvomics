@@ -1,8 +1,12 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import Footer from "../components/footer/Footer";
 import Buttons from "../components/navigation/Buttons";
 
-export default function Home() {
+export default function Home({setMenuOpen}) {
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [setMenuOpen])
   return (
     <>
       <Head>

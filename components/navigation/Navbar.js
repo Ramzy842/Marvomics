@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Menu from "./Menu";
 
-const Navbar = () => {
+const Navbar = ({setMenuOpen, menuOpen}) => {
   const router = useRouter();
   const currentRoute = router.pathname;
+  
   return (
     <nav className=" container mx-auto flex justify-between items-center py-4 absolute top-0 right-0 left-0 z-40">
       <Link href="/">
@@ -13,9 +15,11 @@ const Navbar = () => {
           MARVOMICS
         </a>
       </Link>
-      <div className="mr-4 md:hidden">
-        <Image src="/assets/icons/menu.svg" height={12} width={22} alt="menu" />
+      <div className="mr-4 md:hidden flex" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <Image src="/assets/icons/x.svg" height={24} width={24} alt="menu" /> : <Image src="/assets/icons/menu.svg" height={12} width={22} alt="menu" /> } 
       </div>
+
+      
 
       <ul className="hidden justify-between max-w-xl mr-8 md:flex items-center">
         <Link href="/">

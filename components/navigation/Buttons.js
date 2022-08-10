@@ -30,11 +30,7 @@ const Buttons = () => {
           </div>
         </div>
       </Link>
-      {/* <Link href="#packs">
-        <div className="group cursor-pointer capitalize bg-main-bg text-white rounded-full px-4 w-11/12 sm:w-4/6 md:w-1/2 mx-auto text-center font-semibold text-md py-3  relative hover:shadow-lg">
-          <a className="">View Packs</a>
-        </div>
-      </Link> */}
+      
     </div>
   );
 };

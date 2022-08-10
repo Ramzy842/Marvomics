@@ -3,7 +3,10 @@ import Head from "next/head";
 import React, { useEffect } from "react";
 import CharactersAndComicsLayout from "../../components/layouts/CharactersAndComicsLayout";
 
-const CharactersPage = ({ characters }) => {
+const CharactersPage = ({ characters, setMenuOpen }) => {
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [setMenuOpen])
   return (
     <>
       <Head>

@@ -1,12 +1,15 @@
-import React from "react";
-import Footer from "../footer/Footer";
+import React, { useState } from "react";
+
+import Menu from "../navigation/Menu";
 
 import Navbar from "../navigation/Navbar";
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ children, menuOpen, setMenuOpen }) => {
+  
   return (
     <div className="bg-main-bg min-h-screen  ">
-      <Navbar />
+      <Navbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+      <Menu menuOpen={menuOpen} />
       <div className="">{children}</div>
       {/* <Footer /> */}
     </div>

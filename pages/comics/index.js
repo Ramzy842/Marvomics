@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import CharactersAndComicsLayout from "../../components/layouts/CharactersAndComicsLayout";
 import Head from "next/head";
 
-const comicsPage = ({ comics }) => {
+const ComicsPage = ({ comics, setMenuOpen }) => {
+  
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [setMenuOpen])
   return (
     <>
       <Head>
@@ -30,4 +34,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default comicsPage;
+export default ComicsPage;
