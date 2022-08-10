@@ -9,7 +9,7 @@ const Menu = ({ menuOpen }) => {
         <div className="mx-auto container">
           <ul className=" flex flex-col items-center mx-4">
             <Link href="/characters">
-              <div className="w-full flex justify-center items-center bg-white py-8 my-4 rounded-lg shadow-mobile-link bg-characters bg-no-repeat bg-cover relative">
+              <div className="w-full flex justify-center items-center  py-8 my-4 rounded-lg shadow-mobile-link bg-characters bg-no-repeat bg-cover relative">
                 <div className="h-full w-full bg-black absolute top-0 right-0 left-0 bottom-0 opacity-60 rounded-lg"></div>
                 <h1 className="font-bold text-white z-40 text-bas tracking-wide">
                   Characters
@@ -18,7 +18,7 @@ const Menu = ({ menuOpen }) => {
             </Link>
 
             <Link href="/comics">
-              <div className="w-full flex justify-center items-center bg-white py-8 mb-4 rounded-lg shadow-mobile-link bg-comics bg-no-repeat bg-cover relative">
+              <div className="w-full flex justify-center items-center  py-8 mb-4 rounded-lg shadow-mobile-link bg-comics bg-no-repeat bg-cover relative">
                 <div className="h-full w-full bg-black absolute top-0 right-0 left-0 bottom-0 opacity-60 rounded-lg"></div>
                 <h1 className="font-bold text-white z-40 text-bas tracking-wide">
                   Comics
