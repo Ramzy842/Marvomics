@@ -29,13 +29,13 @@ const SingleCharacterAndComicLayout = ({
             <div className="shadow-thumbnail-large flex   md:hidden">
               {page === "comic" ? (
                 <Image
-                  src={`${
+                  src={
                     images[0]
                       ? images[0].path +
                         "/portrait_incredible." +
                         images[0].extension
                       : "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_incredible.jpg"
-                  } `}
+                  }
                   height={206}
                   width={138}
                   alt={page}
@@ -55,13 +55,13 @@ const SingleCharacterAndComicLayout = ({
             <div className="shadow-thumbnail-large md:flex hidden">
               {page === "comic" ? (
                 <Image
-                  src={`${
-                    images[0]
-                      ? images[0].path +
-                        "/portrait_incredible." +
-                        images[0].extension
-                      : "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_incredible.jpg"
-                  } `}
+                src={
+                  images[0]
+                    ? images[0].path +
+                      "/portrait_incredible." +
+                      images[0].extension
+                    : "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_incredible.jpg"
+                }
                   height={324}
                   width={216}
                   alt={page}
