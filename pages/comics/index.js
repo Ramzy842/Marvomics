@@ -1,15 +1,21 @@
 import React from "react";
 import axios from "axios";
 import CharactersAndComicsLayout from "../../components/layouts/CharactersAndComicsLayout";
+import Head from "next/head";
 
 const comicsPage = ({ comics }) => {
   return (
-    <CharactersAndComicsLayout
-      page="comics"
-      data={comics.data}
-      comics
-      type="comics"
-    />
+    <>
+      <Head>
+        <title>Marvomics | Comics</title>
+      </Head>
+      <CharactersAndComicsLayout
+        page="comics"
+        data={comics.data}
+        comics
+        type="comics"
+      />
+    </>
   );
 };
 

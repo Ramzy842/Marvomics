@@ -1,17 +1,20 @@
 import axios from "axios";
+import Head from "next/head";
 import React, { useEffect } from "react";
 import CharactersAndComicsLayout from "../../components/layouts/CharactersAndComicsLayout";
 
 const CharactersPage = ({ characters }) => {
-  useEffect(() => {
-    console.log(characters.data);
-  }, [characters.data]);
   return (
-    <CharactersAndComicsLayout
-      characters
-      data={characters.data}
-      type="characters"
-    />
+    <>
+      <Head>
+        <title>Marvomics | Characters</title>
+      </Head>
+      <CharactersAndComicsLayout
+        characters
+        data={characters.data}
+        type="characters"
+      />
+    </>
   );
 };
 

@@ -23,7 +23,7 @@ const Navbar = () => {
             className={`transition ${
               currentRoute === "/"
                 ? "bg-white "
-                : "hover:bg-gradient-to-r from-violet-500 to-fuchsia-500  "
+                : "hover:bg-gradient-to-r from-cyan-500 to-blue-500  "
             } text-white ml-4 px-4 py-1 rounded  cursor-pointer `}
           >
             <a
@@ -43,7 +43,7 @@ const Navbar = () => {
             className={`transition ${
               currentRoute === "/characters"
                 ? "bg-white"
-                : "hover:bg-gradient-to-r from-violet-500 to-fuchsia-500"
+                : "hover:bg-gradient-to-r from-cyan-500 to-blue-500"
             } text-white ml-4 px-4 py-1 rounded cursor-pointer `}
           >
             <a
@@ -63,7 +63,7 @@ const Navbar = () => {
             className={`${
               currentRoute === "/comics"
                 ? "bg-white"
-                : "hover:bg-gradient-to-r from-violet-500 to-fuchsia-500"
+                : "hover:bg-gradient-to-r from-cyan-500 to-blue-500"
             } text-white ml-4 px-4 py-1 rounded cursor-pointer `}
           >
             <a

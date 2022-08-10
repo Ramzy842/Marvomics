@@ -88,7 +88,7 @@ const SingleCharacterAndComicLayout = ({
               </li>
               <li
                 className={`flex ${
-                  description ? "flex-col" : "flex-row items-center"
+                  description ? "flex-col" : "flex-row "
                 } mb-4 w-11/12 sm:w-4/5 xl:w-full max-w-md`}
               >
                 <h2
