@@ -25,7 +25,7 @@ const CharactersAndComicsLayout = ({ data, page, type, API_KEY, Hash }) => {
     fetchNew();
   }, [characterSearchByTerm, comicsSearchByTerm, page, searchTerm]);
   return (
-    <div className="min-h-screen">
+    <div>
       <div className=" pt-24  mx-auto container ">
         <InputField
           searchTerm={searchTerm}
@@ -40,7 +40,7 @@ const CharactersAndComicsLayout = ({ data, page, type, API_KEY, Hash }) => {
           </p>{" "}
           |{" "}
           <p className="  sm:ml-4">
-            {list.count} {type} Displayed
+            {list.count} {type} displayed
           </p>{" "}
         </div>
       </div>
@@ -86,9 +86,9 @@ const CharactersAndComicsLayout = ({ data, page, type, API_KEY, Hash }) => {
         })}
       </div>
 
-      <div className="flex pb-4 ">
+      <div className="p-4">
         <div className="mx-auto container">
-          <div className="overflow-y-scroll scrollbar  h-[490px] hidden sm:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mx-8 mt-4 gap-y-8 justify-between  ">
+          <div className="  scrollbar hidden sm:grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 mx-8 mt-4 gap-y-8 ">
             {list.results?.map((element) => {
               const { id, name, title, thumbnail } = element;
               return (

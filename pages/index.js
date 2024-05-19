@@ -14,7 +14,7 @@ export default function Home({setMenuOpen}) {
           Marvomics | Your Favorite Marvel Characters And Comics All In One
         </title>
       </Head>
-      <div className="">
+      <div>
         <div className="bg-black-gradient-overlay-1">
           <div className="container mx-auto flex flex-col justify-center  min-h-screen	items-center relative ">
             <div className="flex flex-col">

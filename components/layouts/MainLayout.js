@@ -7,7 +7,7 @@ import Navbar from "../navigation/Navbar";
 const MainLayout = ({ children, menuOpen, setMenuOpen }) => {
   
   return (
-    <div className="bg-main-bg min-h-screen  ">
+    <div className="bg-main-bg   ">
       <Navbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
       <Menu menuOpen={menuOpen} />
       <div className="">{children}</div>
